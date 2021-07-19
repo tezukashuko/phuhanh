@@ -1,25 +1,36 @@
-h1,
-h2,
-h3,
 ul li a,
 p {
   font-family: "Roboto", sans-serif;
   text-shadow: 1px 10px 1px 0px black;
+  color: #212121;
 }
-
+h1,h2,h3,h4,h5 {
+  font-family: "Bebas Neue", cursive;
+}
+div {
+  padding: 0px;
+}
 .navbar-brand img {
   height: 2.7em;
 }
 .navbar {
   transition: 0.4s ease-out;
 }
-.navbar a{
+.navbar .nav-item a {
   text-transform: capitalize;
+  transition: ease-out 0.2s;
+  padding: 0em 0.2em;
 }
 
-.card-body {
-  margin-top: 7rem !important;
-  overflow: visible;
+.navbar .nav-item a:hover {
+  text-decoration: underline;
+  color: #4caf50 !important;
+}
+
+.body {
+  padding: 0.5em 0em;
+  margin-top: 0px;
+  transition: 0.4s ease-out;
 }
 button.navbar-toggler.d-lg-none {
   align-self: flex-start;
@@ -47,9 +58,6 @@ button.navbar-toggler.d-lg-none {
 .dropdown-menu.show {
   background-color: #f8f9fa;
 }
-#maincarousel {
-  padding: 5px 5px;
-}
 
 .carousel-item img {
   border-radius: 10px;
@@ -65,10 +73,8 @@ button.navbar-toggler.d-lg-none {
   color: black;
   text-align: center;
 }
-.carousel-caption h5 {
-  font-weight: 600;
-}
-.card img {
+
+.box .card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -83,30 +89,6 @@ button.navbar-toggler.d-lg-none {
   border: 1px solid #cccccc;
   background-color: white;
 }
-
-.card > i {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  transform: scale(2);
-  animation: duration timing-function delay iteration-count direction fill-mode;
-}
-.smart-scroll {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.scrolled-down {
-  transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
-}
-.scrolled-up {
-  transform: translateY(0);
-  transition: all 0.3s ease-in-out;
-}
-
 .address > img {
   width: auto;
   height: 50px;
@@ -114,6 +96,10 @@ button.navbar-toggler.d-lg-none {
 }
 .card-footer {
   font-size: small;
+  padding: 0;
+}
+.card-footer p {
+  padding: 0 !important;
 }
 .list {
   list-style: none;
@@ -157,9 +143,18 @@ button.navbar-toggler.d-lg-none {
 .card > .card-body {
   margin: 0 !important;
 }
-@media (min-width: 1200px)  {
+@media (min-width: 1200px) {
   .support {
     position: sticky;
     top: 150px;
   }
+}
+
+footer * {
+  color: white;
+}
+
+
+.width-fit{
+  width: fit-content;
 }

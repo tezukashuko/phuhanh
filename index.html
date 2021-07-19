@@ -16,12 +16,12 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img class="" src="images/logo.png" class="img-fluid"
                         alt="logo-header" /></a>
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="nav-engineering" role="button"
@@ -69,62 +69,19 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center flex-lg-column fixed-top d-none">
-            <a class="navbar-brand justify-content-md-start" href="#"><img class="" src="images/logo.png"
-                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-                    alt="logo-header" /></a>
-            <button class="navbar-toggler d-lg-none align-self-center m-0" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-                <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">engineering</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Factory Building</a>
-                            <a class="dropdown-item" href="#">Construction project</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Air Compressor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Industrial Brush</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Cutting tools & Machinery
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Cutting tools</a>
-                            <a class="dropdown-item" href="#">Machinery</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">about us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
 
 
-    <div class="card-body">
-        <div id="maincarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="body">
+        <div id="maincarousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-ride="carousel"
+            data-bs-interval="3000">
             <ol class="carousel-indicators">
-                <li data-target="#maincarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#maincarousel" data-slide-to="1"></li>
-                <li data-target="#maincarousel" data-slide-to="2"></li>
+                <li data-bs-target="#maincarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#maincarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#maincarousel" data-bs-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <img src="images/wire-brushes-banner.jpg" class="d-block w-100" alt="..." />
                     <div class="carousel-caption d-block">
@@ -149,19 +106,19 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#maincarousel" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#maincarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#maincarousel" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#maincarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <div class="box row p-md-5 p-4">
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+        <div class="d-flex flex-wrap container-md">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/AirCompresser.jpg" class="card-img hover-shadow" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Air Compressor</h5>
@@ -173,13 +130,16 @@
                             corporis porro, cumque repellat consequuntur odit soluta, laboriosam nobis voluptatum
                             voluptatem sunt in sequi error amet quam ipsum.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/brush.jpg" class="card-img" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Industrial Brush</h5>
@@ -188,13 +148,15 @@
                             lead-in to additional content. This content is a little bit
                             longer.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/cuttingtool.jpg" class="card-img" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Cutting Tools</h5>
@@ -203,13 +165,15 @@
                             lead-in to additional content. This content is a little bit
                             longer.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/d1111ed6.png" class="card-img" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Trading</h5>
@@ -218,13 +182,15 @@
                             lead-in to additional content. This content is a little bit
                             longer.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/engineering.jpg" class="card-img" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Engineering</h5>
@@ -233,13 +199,15 @@
                             lead-in to additional content. This content is a little bit
                             longer.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 py-2 rounded-2">
-                <div class="card text-dark h-100 p-1">
+            <div class="col-12 col-md-6 col-lg-4 my-2 rounded-2">
+                <div class="card text-dark h-100 m-2 p-1">
                     <img src="images/Box/service.jpg" class="card-img" alt="..." />
                     <div class="card-body m-0">
                         <h5 class="card-title">Service</h5>
@@ -248,18 +216,22 @@
                             lead-in to additional content. This content is a little bit
                             longer.
                         </p>
-                        <p class="card-text">Last updated 3 mins ago</p>
                     </div>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <div class="card-footer d-flex align-items-center justify-content-between p-1">
+                        <p class="m-0">Last updated 3 mins ago</p>
+                        <i class="fas fa-2x fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class="card-footer text-muted row px-5 bg-secondary ">
-        <div class=" col-md-12 col-lg-6 px-3">
-            <div class="address text-light">
-                <img src="images/logo.png" alt="">
+
+    
+    <footer class="d-flex flex-wrap mt-5 pb-5 px-5 pt-2 bg-dark bg-gradient">
+        <div class="col-md-12 col-lg-6 py-sm-3">
+            <div class="address container-lg px-1">
+                <img src="images/logo.png" class="bg-white rounded-2 p-2" alt="">
                 <p class="footer_info">
                     <span>Phone: (84-28) 5408 1235 - (84-28) 62 69 08 03</span><br>
                     <span>Fax: (84-28) 54442618</span><br>
@@ -268,7 +240,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-md-6 col-lg-2 p-3 text-light">
+        <div class="col-6 col-lg-2 p-3 text-center">
             <h3>About Us</h3>
             <ul class="list">
                 <li><a href="/">Home</a></li>
@@ -278,7 +250,7 @@
 
             </ul>
         </div>
-        <div class="col-md-6 col-lg-2 p-3 text-light">
+        <div class="col-6 col-lg-2 p-3 text-center">
             <h3>Support</h3>
             <ul class="list">
                 <li><a href="/Home/ShoppingGuide">Shopping guide</a></li>
@@ -304,9 +276,17 @@
                 </div>
 
             </div>
-
         </div>
-    </div>
+        <br>
+        <div class="col-md-12 text-center py-2">
+            <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by Tezu
+            </p>
+        </div>
+
+    </footer>
+
 
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -317,6 +297,39 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-autohidingnavbar/4.0.0/jquery.bootstrap-autohidingnavbar.min.js"
+        integrity="sha512-c+Hev/qNHoT1qz8mOOFbF+53VBat8RlCla06HBYNZjF6Y8P4cW73n0RD5mXiQ1AB4M9huCwOqFBWJ+sGA9oDPA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>$(".navbar").autoHidingNavbar();
+        let below_nav = document.querySelector('.body')
+        below_nav.style.marginTop = document.querySelector('.navbar').offsetHeight + 'px'</script>
+
+
+    <!-- < script >
+
+            let prevScrollpos = window.pageYOffset;
+        let navbar = document.querySelector('.navbar')
+        let below_nav = document.querySelector('.body')
+        below_nav.style.marginTop = navbar.offsetHeight + 'px'
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+
+                navbar.style.top = "0px";
+                below_nav.style.marginTop = navbar.offsetHeight + 'px'
+            } else {
+                navbar.style.top = "-150px";
+                below_nav.style.marginTop = '0px';
+            }
+            prevScrollpos = currentScrollPos;
+        };
+
+    </script >  -->
 </body>
 
 </html>
