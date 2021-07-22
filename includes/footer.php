@@ -34,7 +34,7 @@
             <!--<img src="/Theme/images/Partner.png" />-->
             <div class="partner d-flex justify-content-center flex-wrap">
                 <div class="partner_item">
-                    <img class="partner_item_img" src="images/Partner/Partner_1.png">
+                    <img class="partner_item_img" src="images/Partner/partner_1.png">
                 </div>
                 <div class="partner_item">
                     <img class="partner_item_img" src="images/Partner/partner_2.png">
