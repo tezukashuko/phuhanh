@@ -8,7 +8,6 @@ p {
 
 a,
 i {
-  
   text-decoration: none !important;
 }
 h1,
@@ -30,14 +29,20 @@ div {
 .navbar .nav-item a {
   text-transform: capitalize;
   transition: ease-out 0.2s;
-  padding: 0em 0.2em;
+  padding: 0.5em 0.2em;
+  font-size: medium;
 }
-
 .navbar .nav-item a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: #4caf50 !important;
 }
 
+.navbar .dropdown-menu .dropdown-item{
+  padding: 0em 0.5em;
+}
+.navbar .dropdown-menu .dropdown-item:active{
+  color: white !important;
+}
 .body {
   padding: 0.5em 0em;
   margin-top: 0px;
