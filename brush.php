@@ -3,8 +3,8 @@ include 'includes/header.php' ?>
 
 <body>
     <div class='row container mt-2'>
-        <div class="col-7 d-flex align-items-center"><img class="w-100" style="object-fit: cover; height: 100%" src="images/wire-brushes-banner.jpg" alt=""></div>
-        <div class="col-5 text-black d-flex justify-content-center align-items-center">
+        <div class="col-md-7 col-12 d-flex align-items-center"><img class="w-100" style="object-fit: cover; height: 100%" src="images/wire-brushes-banner.jpg" alt=""></div>
+        <div class="col-md-5 col-12 text-black d-flex justify-content-center align-items-center">
             <h1 class="display-2">Industrial Brush</h1>
         </div>
     </div>
@@ -43,8 +43,54 @@ include 'includes/header.php' ?>
                             </div>
                         </div>
                     </div>
-            </div></a>
-
+                </a>
+            </div>
+            <div class="card mb-3 w-75">
+                <a href="brushDetail.php">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center" style="height: 12em;">
+                            <img src="images/Product/NSK inox WEB.jpg" style="object-fit: contain; height: 100%; width: 100%;" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card mb-3 w-75">
+                <a href="brushDetail.php">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center" style="height: 12em;">
+                            <img src="images/Product/NSK inox WEB.jpg" style="object-fit: contain; height: 100%; width: 100%;" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card mb-3 w-75">
+                <a href="brushDetail.php">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center" style="height: 12em;">
+                            <img src="images/Product/NSK inox WEB.jpg" style="object-fit: contain; height: 100%; width: 100%;" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
 
         </div>
     </div>
