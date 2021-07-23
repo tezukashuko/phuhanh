@@ -3,9 +3,20 @@ p {
   font-family: "Roboto", sans-serif;
   text-shadow: 1px 10px 1px 0px black;
   color: #212121;
+  text-decoration: none;
 }
-h1,h2,h3,h4,h5 {
-  font-family: "Bebas Neue", cursive;
+
+a,
+i {
+  
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald", sans-serif;
 }
 div {
   padding: 0px;
@@ -154,7 +165,6 @@ footer * {
   color: white;
 }
 
-
-.width-fit{
+.width-fit {
   width: fit-content;
 }
