@@ -61,7 +61,6 @@ include 'includes/header.php' ?>
                                 <th scope="col">Wire size</th>
                                 <th scope="col">Packing <br> (Pcs/carton)</th>
                                 <th scope="col">RPM</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -75,6 +74,15 @@ include 'includes/header.php' ?>
                                 <td>12500</td>
                             </tr>
                             <tr>
+                                <th scope="row" class="text-nowrap"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <th scope="row" class="text-nowrap">99575-B</th>
                                 <td>75mm</td>
                                 <td>M10*1.5</td>
@@ -83,6 +91,7 @@ include 'includes/header.php' ?>
                                 <td>100</td>
                                 <td>12500</td>
                             </tr>
+                            
                             <tr>
                                 <th scope="row" class="text-nowrap">99575-B</th>
                                 <td>75mm</td>
