@@ -4,23 +4,23 @@
 		"titleVN": "Chén cước thẳng sợi đồng, chén chà rỉ sợi đồng",
 		"descriptionTitle": "CUP BRUSH  - BRASH WIRE",
 		"description": [
-			"Special material for non sparking purpose",
+			"Special material for NON SPARKING PURPOSE",
 			"Rust and paint removal on oil and gas factory",
 			"Removal of weld scale and corrosion in gas tank",
 			"Surface preparation for paint or welding"
 		],
 		"tablehead": [
 			"Item NO",
-			"Diameter",
 			"Nut Size",
+			"Diameter",
 			"Wire length",
 			"Wire size",
 			"Packing <br> (Pcs/carton)",
 			"RPM"
 		],
-		"items": [["99575-B", "75mm", "M10*1.5", "27", "0.35", "100", "12500"]]
+		"items": [["99575-B-B", "M10*1.5", "75mm", "27", "0.30", "40", "12500"]]
 	},
-	"twistedwire": {
+	"twistedwirecup": {
 		"titleEN": "Cup Brush - Carbon Steel Twisted Wire",
 		"titleVN": "Chén cước xoắn sợi thép carbon, chén chà rỉ sợi sắt",
 		"descriptionTitle": "TWISTED KNOT BOWL BRUSHES",
@@ -33,17 +33,22 @@
 		],
 		"tablehead": [
 			"Item NO",
-			"Diameter",
 			"Nut Size",
+			"Diameter",
 			"Wire length",
 			"Wire size",
 			"Packing <br> (Pcs/carton)",
 			"RPM"
 		],
-		"items": [["99575-B", "75mm", "M10*1.5", "27", "0.35", "100", "12500"]]
+		"items": [
+			["99775-B", "M10*1.5", "75mm", "27", "0.50", "100", "12500"],
+			["99775-C", "M14*2", "75mm", "27", "0.50", "100", "12500"],
+			["99775-C-BS", "M14*2", "75mm", "27", "0.50", "100", "12500"],
+			["998200", "M14*2", "75mm", "200", "0.50", "100", "8000"]
+		]
 	},
 	"stainlesswire": {
-        "titleEN": "Cup Brush - Stainless Steel Wire SS304 ",
+		"titleEN": "Cup Brush - Stainless Steel Wire SS304 ",
 		"titleVN": "Chén cước xoắn sợi thép không rỉ - INOX 304, chén chà rỉ sợi inox",
 		"descriptionTitle": "STAINLESS STEEL Twisted Knot Bowl Brushes",
 		"description": [
@@ -55,19 +60,20 @@
 		],
 		"tablehead": [
 			"Item NO",
-			"Diameter",
 			"Nut Size",
+			"Diameter",
 			"Wire length",
 			"Wire size",
 			"Packing <br> (Pcs/carton)",
 			"RPM"
 		],
-		"items": [["99575-B", "75mm", "M10*1.5", "27", "0.35", "100", "12500"]]
-    },
-	"wheelbrush": {},
-	"brushset": {},
+		"items": [
+			["99775-B-SS304", "M10*1.5", "75mm", "27mm", "0.5", "100", "12500"],
+			["99775-C-SS304", "M14*2", "75mm", "27mm", "0.5", "100", "12500"]
+		]
+	},
 	"dishbrush": {
-        "titleEN": "Dish Brush - Carbon Steel Twisted wire",
+		"titleEN": "Dish Brush - Carbon Steel Twisted wire",
 		"titleVN": "Đĩa cước xoắn sợi thép carbon, Đĩa chà rỉ sợi sắt",
 		"descriptionTitle": "TWISTED WIRE DISH WHEEL BRUSHES FOR SINGLE HANDED ANGLE GRINDERS",
 		"description": [
@@ -76,18 +82,20 @@
 		],
 		"tablehead": [
 			"Item NO",
-			"Diameter",
 			"Nut Size",
+			"Diameter",
 			"Wire length",
 			"Wire size",
 			"Packing <br> (Pcs/carton)",
 			"RPM"
 		],
-		"items": [["99575-B", "75mm", "M10*1.5", "27", "0.35", "100", "12500"]]
-	
-    },
-	"airbrush": {
-        "titleEN": "Dish Brush for Air Tools - Carbon Steel Twisted wire",
+		"items": [
+			["882-115", "M14*2", "115mm", "27mm", "0.5", "100", "12500"],
+			["882-125", "M14*2", "125mm", "27mm", "0.5", "100", "12500"]
+		]
+	},
+	"aircupbrush": {
+		"titleEN": "Cup Brush for Air Tools - Carbon Steel Twisted wire",
 		"titleVN": "Chén cước xoắn sợi thép carbon dùng cho máy mài hơi, chén chà rỉ sợi sắt dùng cho máy mài hơi",
 		"descriptionTitle": "TWISTED WIRE DISH WHEEL BRUSHES FOR  AIR GRINDER WITH 16MM spindle hole",
 		"description": [
@@ -99,14 +107,13 @@
 		],
 		"tablehead": [
 			"Item NO",
+			"Hold Size",
 			"Diameter",
-			"Nut Size",
 			"Wire length",
 			"Wire size",
 			"Packing <br> (Pcs/carton)",
 			"RPM"
 		],
-		"items": [["99575-B", "75mm", "M10*1.5", "27", "0.35", "100", "12500"]]
-	
-    }
+		"items": [["99575-D16","16mm Hole", "75mm",  "27", "0.5", "100", "12500"]]
+	}
 }

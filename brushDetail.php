@@ -1,5 +1,20 @@
 <?php
-include 'includes/header.php' ?>
+include 'includes/header.php';
+$a = '';
+if (isset($_GET['type']))
+{
+    $a = $_GET['type'];
+}
+include __DIR__ . '/database/database.php';
+if (isset($products->{$a}) && count((array)$products->{$a}) <> 0)
+{
+    $product = $products->{$a};
+}
+else{
+    $product = $products->{'twistedwirecup'};
+}
+
+?>
 
 <body>
     <div class="container d-flex flex-wrap">
@@ -32,21 +47,20 @@ include 'includes/header.php' ?>
             </div>
         </div>
         <div class="col">
-            <div class="container d-flex flex-column justify-content-center align-items-center h-100">
-                <h1>Cup brush - brash wire</h1>
-                <h5>Chén cước thẳng sợi đồng, chén chà rỉ sợi đồng</h5>
+            <div class="container d-flex flex-column justify-content-center align-items-center h-100 mx-md-3 my-1 my-sm-3">
+                <h1><?php echo $product->{'titleEN'} ?></h1>
+                <h5><?php echo $product->{'titleVN'} ?></h5>
             </div>
         </div>
         <div class="col-12">
-            <div class="container bg-secondary bg-gradient text-white rounded-3 p-3">
+            <div class="container bg-dark bg-gradient text-white rounded-3 p-3 mt-5">
                 <h5>Description</h5>
                 <hr class="container" style="height: 2px; color:white">
-                <p class="text-white m-0"> CUP BRUSH - BRASH WIRE</p>
+                <p class="text-white m-0"><?php echo $product->{'descriptionTitle'} ?></p>
                 <ul>
-                    <li>Special material for non sparking purpose</li>
-                    <li>Rust and paint removal on oil and gas factory</li>
-                    <li>Removal of weld scale and corrosion in gas tank</li>
-                    <li>Rurface preparation for paint or welding</li>
+                    <?php foreach ($product->{'description'} as $key) : ?>
+                        <li><?php echo $key; ?></li>
+                    <?php endforeach; ?>
                 </ul>
                 <hr class="container" style="height: 2px; color:white">
                 <p class="text-white m-0"> DIMENSION DETAIL</p>
@@ -54,26 +68,39 @@ include 'includes/header.php' ?>
                     <table class="table table-secondary table-striped ">
                         <thead>
                             <tr>
-                                <th scope="col w-100">Item NO</th>
+                                <?php for ($i = 0; $i < count($product->{'tablehead'}); $i++)
+                                {
+                                    if ($i == 0)
+                                    {
+                                        echo "<th scope='col w-100'>{$product->{'tablehead'}[$i]}</th>";
+                                    }
+                                    else
+                                    {
+                                        echo "<th scope='col '>{$product->{'tablehead'}[$i]}</th>";
+                                    }
+                                } ?>
+                                <!-- <th scope="col w-100">Item NO</th>
                                 <th scope="col">Diameter</th>
                                 <th scope="col">Nut Size</th>
                                 <th scope="col">Wire length</th>
                                 <th scope="col">Wire size</th>
                                 <th scope="col">Packing <br> (Pcs/carton)</th>
-                                <th scope="col">RPM</th>
+                                <th scope="col">RPM</th> -->
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row" class="text-nowrap">99575-B</th>
-                                <td>75mm</td>
-                                <td>M10*1.5</td>
-                                <td>27</td>
-                                <td>0.35</td>
-                                <td>100</td>
-                                <td>12500</td>
-                            </tr>
-                            <tr>
+                            <?php foreach ($product->{'items'} as $item) : ?>
+                                <tr>
+                                    <th scope="row" class="text-nowrap"><?php echo $item[0] ?></th>
+                                    <td><?php echo $item[1] ?></td>
+                                    <td><?php echo $item[2] ?></td>
+                                    <td><?php echo $item[3] ?></td>
+                                    <td><?php echo $item[4] ?></td>
+                                    <td><?php echo $item[5] ?></td>
+                                    <td><?php echo $item[6] ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            <!-- <tr>
                                 <th scope="row" class="text-nowrap"></th>
                                 <td></td>
                                 <td></td>
@@ -91,7 +118,7 @@ include 'includes/header.php' ?>
                                 <td>100</td>
                                 <td>12500</td>
                             </tr>
-                            
+
                             <tr>
                                 <th scope="row" class="text-nowrap">99575-B</th>
                                 <td>75mm</td>
@@ -100,7 +127,7 @@ include 'includes/header.php' ?>
                                 <td>0.35</td>
                                 <td>100</td>
                                 <td>12500</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>

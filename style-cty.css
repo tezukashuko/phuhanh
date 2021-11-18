@@ -173,3 +173,7 @@ footer * {
 .width-fit {
   width: fit-content;
 }
+
+.table thead tr th {
+  vertical-align: middle !important;
+}

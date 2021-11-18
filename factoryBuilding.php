@@ -9,7 +9,7 @@ include 'includes/header.php' ?>
         </div>
     </div>
     <hr class="container">
-    <div class="row">
+    <div class="d-flex flex-wrap">
         <div class="col-12 col-lg-3 ">
             <div class="ms-lg-4 sticky-lg-top my-4 my-lg-1" style="top: 100px; transition: 0.1s;">
                 <div class="container rounded-3 py-2" style="background-color: #4CAF50; height: fit-content; color: #FFFFFF !important;">
@@ -66,6 +66,7 @@ include 'includes/header.php' ?>
 
             </div>
             <div class="card mb-3 w-75">
+
                 <div class="row g-0">
                     <div class="col-md-4 d-flex justify-content-center" style="height: 12em;">
                         <div id="electric" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval='2000'>
@@ -98,6 +99,8 @@ include 'includes/header.php' ?>
                         </div>
                     </div>
                 </div>
+                </a>
+
 
             </div>
             <div class="card mb-3 w-75">
@@ -173,9 +176,56 @@ include 'includes/header.php' ?>
 
         </div>
     </div>
-
+    <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <img src="" alt="">
+                <p class="modal-title" style="margin: auto;">hello</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev modalbtn" onclick="modalControl('prev')" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next modalbtn" onclick="modalControl('next')" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        imgs = document.querySelectorAll('.carousel-item .w-100')
+        imgsIndex = 0;
+        imgslength = imgs.length;
 
+        for (let [index, img] of imgs.entries()) {
+            img.addEventListener('click', e => {
+                e.preventDefault();
+
+                let myModal = new bootstrap.Modal(document.querySelector('.modal'))
+                imgsIndex = index;
+
+                document.querySelector('.modal .modal-title').innerHTML = e.srcElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.card-title').innerHTML;
+                document.querySelector('.modal img').src = e.srcElement.src
+                myModal.show();
+            })
+        }
+
+    });
+
+    function modalControl(directory) {
+        if (directory == 'next') {
+            imgsIndex == imgs.length - 1 ? imgsIndex = 0 : imgsIndex++;
+            document.querySelector('.modal .modal-title').innerHTML = imgs[imgsIndex].parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.card-title').innerHTML;
+            document.querySelector('.modal img').src = imgs[imgsIndex].src
+        } else {
+            imgsIndex == 0 ? imgsIndex = imgslength - 1 : imgsIndex--;
+            document.querySelector('.modal .modal-title').innerHTML = imgs[imgsIndex].parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.card-title').innerHTML;
+            document.querySelector('.modal img').src = imgs[imgsIndex].src
+        }
+    }
+</script>
 
 <?php
 include 'includes/footer.php' ?>
