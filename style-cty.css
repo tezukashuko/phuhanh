@@ -78,8 +78,31 @@ button.navbar-toggler.d-lg-none {
 .carousel-item img {
   border-radius: 10px;
   max-width: 100%;
-  height: 60vh;
+  height: 100%;
   object-fit: cover;
+}
+.carousel-item{
+  height: 60vh;
+}
+.factory .carousel-item{
+  height: 10rem;
+}
+.factory .carousel-item img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: fit-content;
+  object-position: center;
+  object-fit: cover;
+}
+.factory .carousel-item img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: fit-content;
+  object-position: center;
+  object-fit: cover;
+}
+.factory .carousel-item img :hover {
+  transform: scale(1.5);
 }
 .carousel-caption {
   margin-top: 50px !important;

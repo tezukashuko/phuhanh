@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php' ?>
 
-<body>
+<body class="factory">
     <div class='row container mt-2'>
         <div class="col-md-7 col-12 d-flex align-items-center" style="height: 50vh;"><img class="w-100" style="object-fit: cover; object-position: center; height: 100%" src="images/FactoryBuilding/buildingbanner.jpg" alt=""></div>
         <div class="col-md-5 col-12 text-black d-flex justify-content-center align-items-center">
@@ -40,10 +40,10 @@ include 'includes/header.php' ?>
                             </ol>
                             <div class="carousel-inner h-100" role="listbox">
                                 <div class="carousel-item active ">
-                                    <img src="images/FactoryBuilding/interior.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="First slide">
+                                    <img src="images/FactoryBuilding/interior.jpg" class="w-100"  alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/FactoryBuilding/interior1.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="Second slide">
+                                    <img src="images/FactoryBuilding/interior1.jpg" class="w-100"  alt="Second slide">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#interior" data-bs-slide="prev">
@@ -76,10 +76,10 @@ include 'includes/header.php' ?>
                             </ol>
                             <div class="carousel-inner h-100" role="listbox">
                                 <div class="carousel-item active ">
-                                    <img src="images/FactoryBuilding/electric.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="First slide">
+                                    <img src="images/FactoryBuilding/electric.jpg" class="w-100"  alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/FactoryBuilding/electric1.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="Second slide">
+                                    <img src="images/FactoryBuilding/electric1.jpg" class="w-100"  alt="Second slide">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#electric" data-bs-slide="prev">
@@ -113,10 +113,10 @@ include 'includes/header.php' ?>
                             </ol>
                             <div class="carousel-inner h-100" role="listbox">
                                 <div class="carousel-item active ">
-                                    <img src="images/FactoryBuilding/aircon.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="First slide">
+                                    <img src="images/FactoryBuilding/aircon.jpg" class="w-100"  alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/FactoryBuilding/aircon1.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="Second slide">
+                                    <img src="images/FactoryBuilding/aircon1.jpg" class="w-100"  alt="Second slide">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#aircon" data-bs-slide="prev">
@@ -148,10 +148,10 @@ include 'includes/header.php' ?>
                             </ol>
                             <div class="carousel-inner h-100" role="listbox">
                                 <div class="carousel-item active ">
-                                    <img src="images/FactoryBuilding/fire.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="First slide">
+                                    <img src="images/FactoryBuilding/fire.jpg" class="w-100"  alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/FactoryBuilding/fire1.jpg" class="w-100" style="object-fit: cover; object-position: center; height: 100%" alt="Second slide">
+                                    <img src="images/FactoryBuilding/fire1.jpg" class="w-100"  alt="Second slide">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#fire" data-bs-slide="prev">
